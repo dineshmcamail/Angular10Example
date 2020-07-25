@@ -1,0 +1,27 @@
+<div class="calculator">
+    <table>
+        <!-- ADD HEADERS -->
+        <tr>
+            <th>clcL_ID</th>
+                <th>cdmL_SEQ_NO</th>
+                    <th>cdmL_CHG_AMT</th>
+                        <th>cdmL_ALLOW</th>
+                            <th>cdoR_OR_AMT</th>
+                                <th>cdoR_OR_ID</th>
+                                    <th>cdoR_EXCD_ID</th>
+        </tr>
+
+        <!-- BIND ARRAY TO TABLE -->
+        <tr *ngFor="let product of products">
+            <td>{{product.clcL_ID}}</td>
+                <td>{{product.cdmL_SEQ_NO}}</td>
+                    <td>{{product.cdmL_CHG_AMT}}</td>
+                        <td>{{product.cdmL_ALLOW}}</td>
+                            <td>{{product.cdoR_OR_AMT}}</td>
+                                <td>{{product.cdoR_OR_ID}}</td>
+                                    <td>{{product.cdoR_EXCD_ID}}</td>
+                
+        </tr>
+    </table>
+    
+  </div>
